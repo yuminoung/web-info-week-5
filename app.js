@@ -3,5 +3,5 @@ const app = express()
 
 app.get('/', (req, res) => res.send('Hello Commit'))
 
-PORT_NUMBER = 3000 || process.env.PORT
+PORT_NUMBER = process.env.PORT || 3000
 app.listen(PORT_NUMBER, () => console.log('Listening...'))
